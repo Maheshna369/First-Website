@@ -1,0 +1,137 @@
+@media (max-width: 480px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+  header,
+  nav {
+    height: 100px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background-image: url(../public/images/headerbgimg.jpg);
+    background-size: cover;
+  }
+  /*header ul{
+            height: 80px;
+            width: 200px;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }*/
+  header nav ul {
+    display: none;
+  }
+  header nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 150px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px;
+  }
+  .active {
+    background-color: #0d6efd;
+    color: white;
+  }
+  header nav ul li a {
+    font-size: 20px;
+    height: 40px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    text-align: center;
+  }
+  #check {
+    display: none;
+  }
+  .check-btn {
+    display: block;
+    position: absolute;
+    left: 0px;
+    color: white;
+    margin: 10px;
+    height: 40px;
+  }
+  #check:checked ~ ul {
+    background-image: url(../public/images/menubarbgimg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+  }
+  header nav .search-container {
+    position: absolute;
+    right: 0px;
+  }
+  header nav .search-container input {
+    padding: 5px;
+    height: 40px;
+    width: 195px;
+    margin-right: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  header nav .search-container button {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    height: 40px;
+  }
+  main {
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    animation: maphy 2s ease infinite;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+
+  main h1 {
+    font-weight: bolder;
+  }
+  main p {
+    font-style: italic;
+    font-weight: 500;
+  }
+  footer {
+    position: relative;
+    bottom: 0px;
+    top: 80px;
+  }
+}
