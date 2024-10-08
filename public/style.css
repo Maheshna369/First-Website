@@ -1,0 +1,262 @@
+@media (max-width: 480px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+  header,
+  nav {
+    height: 100px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background-image: url(./images/headerbgimg.jpg);
+    background-size: cover;
+  }
+  /*header ul{
+        height: 80px;
+        width: 200px;
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }*/
+  header nav ul {
+    display: none;
+  }
+  header nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 150px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px;
+  }
+  .active {
+    background-color: #0d6efd;
+    color: white;
+  }
+  header nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    text-align: center;
+  }
+  #check {
+   
+    display: none;
+  }
+  .check-btn {
+    
+    display: block;
+    position: absolute;
+    left: 0px;
+    color: white;
+    margin: 10px;
+    height: 40px;
+  }
+  #check:checked ~ ul {
+    background-image: url(./images/menubarbgimg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+  }
+  header nav .search-container {
+    position: absolute;
+    right: 0px;
+  }
+  header nav .search-container input {
+    padding: 5px;
+    height: 40px;
+    width: 195px;
+    margin-right: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  header nav .search-container button {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    height: 40px;
+  }
+
+  main {
+    position: relative;
+    top: 100px;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    animation: maphy 2s ease infinite;
+  }
+  @keyframes maphy {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  main h2 {
+    font-weight: bolder;
+  }
+  main .container-1,
+  .container-2,
+  .container-3,
+  .container-4,
+  .container-5,
+  .container-6 {
+    border: white 2px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 212px;
+    padding: 10px;
+    gap: 10px;
+  }
+  main .container-1 img {
+    border: white 2px solid;
+    border-radius: 5px;
+    width: 190px;
+  }
+  main .container-2 img {
+    border: white 2px solid;
+    border-radius: 5px;
+    width: 190px;
+  }
+  main .container-3 img {
+    border: white 2px solid;
+    border-radius: 5px;
+    width: 190px;
+  }
+  main .container-4 img {
+    border: white 2px solid;
+    border-radius: 5px;
+    width: 190px;
+  }
+  main .container-5 img {
+    border: white 2px solid;
+    border-radius: 5px;
+    width: 190px;
+  }
+  main .container-6 img {
+    border: white 2px solid;
+    border-radius: 5px;
+    width: 190px;
+  }
+  main .container-1 h3 {
+    padding: 5px;
+    border: white 2px solid;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  main .container-2 h3 {
+    padding: 5px;
+    border: white 2px solid;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  main .container-3 h3 {
+    padding: 5px;
+    border: white 2px solid;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  main .container-4 h3 {
+    padding: 5px;
+    border: white 2px solid;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  main .container-5 h3 {
+    padding: 5px;
+    border: white 2px solid;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  main .container-6 h3 {
+    padding: 5px;
+    border: white 2px solid;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+  }
+  main .container-1 h3 a {
+    text-decoration: none;
+  }
+  main .container-2 h3 a {
+    text-decoration: none;
+  }
+  main .container-3 h3 a {
+    text-decoration: none;
+  }
+  main .container-4 h3 a {
+    text-decoration: none;
+  }
+  main .container-5 h3 a {
+    text-decoration: none;
+  }
+  main .container-6 h3 a {
+    text-decoration: none;
+  }
+  main button {
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    margin: 10px;
+  }
+  footer {
+    position: relative;
+    top: 80px;
+    bottom: 0px;
+  }
+}
